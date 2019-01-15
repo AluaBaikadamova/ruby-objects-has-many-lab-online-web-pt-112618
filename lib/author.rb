@@ -1,7 +1,8 @@
 class Author
   attr_accessor :name
-  @@artists = []
+  @@authors = []
   def initialize(name)
+    @@authors << self
     @name = name
     @posts=[]
   end
