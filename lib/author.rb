@@ -11,12 +11,11 @@ class Author
   
    def add_post(post)
     @posts << post
-    post.author = self unless post.author == self
+    post.author = self 
   end
   def add_post_by_title(name)
     a=Post.new(name)
-    @posts<<a
-    a.author=self
+    add_post(a)
   end
   def posts
     @posts
