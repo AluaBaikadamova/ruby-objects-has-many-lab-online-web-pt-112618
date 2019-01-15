@@ -20,6 +20,9 @@ class Author
   def posts
     @posts
   end
+  def self.all
+    @@authors
+  end
   def self.post_count
     return self.posts.size
   end
